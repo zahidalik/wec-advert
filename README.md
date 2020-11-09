@@ -1,24 +1,5 @@
-# README
+# WEC-Advert
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This web app has been created to carry on advertisement of Waliul Asr Education Centre, Kibaha, Tanzania.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Programmer: Zahid Ali Khan <zahidkhan545@icloud.com>**
