@@ -1,9 +1,20 @@
-%ul.nav.justify-content-end.bg-info
+%ul.nav.justify-content-end.bg-info.sticky-top
+  %li.nav-item.mr-auto
+    .nav-link.active
+      = link_to root_path, class: "text-light" do
+        .fa.fa-home
+        Waliul Asr Education Centre
   %li.nav-item
-    .nav-link.active.text-light +255 621 429 242
+    .nav-link.active.text-light
+      .fa.fa-phone
+      +255 621 429 242
   %li.nav-item
-    %a.nav-link{:href => "#"} Link
+    .nav-link.active
+      = link_to "http://www.wipahs.co.tz", class: "text-light" do
+        .fa.fa-globe-africa
+        WIPAHS
   %li.nav-item
-    %a.nav-link{:href => "#"} Link
-  %li.nav-item
-    %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"}Disabled
+    .nav-link
+      = link_to "#", class: "text-light" do
+        .fa.fa-info-circle
+        About us
