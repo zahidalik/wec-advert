@@ -1,24 +1,24 @@
-%ul.nav.justify-content-end.bg-info.sticky-top
-  %li.nav-item.mr-auto
+.navbar.navbar-expand-lg.justify-content-end.bg-info.sticky-top
+  .nav-item.mr-auto
     .nav-link.active
       = link_to root_path, class: "text-light" do
         .fa.fa-home
         Waliul Asr Education Centre
-  %li.nav-item
+  .nav-item
     .nav-link.active.text-light
       .fa.fa-phone
       05575859
-  %li.nav-item
+  .nav-item
     .nav-link.active
       = link_to "http://www.wipahs.co.tz", class: "text-light" do
         .fa.fa-globe-africa
         WIPAHS
-  %li.nav-item
+  .nav-item
     .nav-link
       = link_to about_path, class: "text-light" do
         .fa.fa-info-circle
         About us
-  %li.nav-item
+  .nav-item
     .nav-link
       .badge.badge-pill.badge-primary
         = @current_date
