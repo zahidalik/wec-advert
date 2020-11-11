@@ -1,0 +1,63 @@
+%p
+.row
+  .col-lg-8
+    .card-header.bg-success.text-light
+      .fa.fa-graduation-cap
+      WBS (Waliul Asr Boys Secondary)
+    .card-body
+      This school is located inside the WEC premises in Kibaha
+    .card-footer
+      = link_to "Back to all schools", root_path, class: "btn btn-primary"
+  .col-lg-4
+    .row
+      #carouselExampleIndicators1.carousel.slide{"data-ride" => "carousel"}
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleIndicators1"}
+          %li{"data-slide-to" => "1", "data-target" => "#carouselExampleIndicators1"}
+          %li{"data-slide-to" => "2", "data-target" => "#carouselExampleIndicators1"}
+        .carousel-inner
+          .carousel-item.active
+            = image_tag("school.jpg", alt: "school", class: "d-block w-100")
+          .carousel-item
+            = image_tag("school.jpg", alt: "school", class: "d-block w-100")
+          .carousel-item
+            = image_tag("school.jpg", alt: "school", class: "d-block w-100")
+        %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleIndicators1", :role => "button"}
+          %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+          %span.sr-only Previous
+        %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleIndicators1", :role => "button"}
+          %span.carousel-control-next-icon{"aria-hidden" => "true"}
+          %span.sr-only Next
+    %p
+    .row
+      .card.w-100
+        .card-header.bg-primary.text-light
+          .fa.fa-question-circle
+          Contact(s) for admission
+        .card-body
+          .contact-info
+            Accounts:
+            .fa.fa-phone
+            048885858
+          %p
+          .contact-info
+            Principle:
+            .fa.fa-phone
+            0666474747
+        .card-footer
+          .text-left
+            .badge.badge-warning
+              Monday to Friday
+            .badge.badge-primary
+              8:00 AM
+            \-
+            .badge.badge-primary
+              5:00 PM
+          .text-right
+            .badge.badge-warning
+              Saturday
+            .badge.badge-primary
+              8:00 AM
+            \-
+            .badge.badge-primary
+              12:30 PM

@@ -1,11 +1,9 @@
 %p
-.card
-  .card-header.text-center.about-us-card-header
-    %h3.text-light
-      .fa.fa-info-circle
-      About us
-  %img.card-img-top{:alt => "...", :src => "..."}/
-  .card-body
-    %h5.card-title
-    %p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
-    %a.btn.btn-primary{:href => "#"} Go somewhere
+.card-header.text-center.bg-success.rounded
+  %h4.text-light
+    .fa.fa-info-circle
+    About us
+.card-body
+  %h5.card-title
+  %p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+  = link_to "Go to all schools", root_path, class: "btn btn-primary"

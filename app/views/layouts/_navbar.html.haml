@@ -7,7 +7,7 @@
   %li.nav-item
     .nav-link.active.text-light
       .fa.fa-phone
-      +255 621 429 242
+      05575859
   %li.nav-item
     .nav-link.active
       = link_to "http://www.wipahs.co.tz", class: "text-light" do
@@ -15,6 +15,10 @@
         WIPAHS
   %li.nav-item
     .nav-link
-      = link_to "#", class: "text-light" do
+      = link_to about_path, class: "text-light" do
         .fa.fa-info-circle
         About us
+  %li.nav-item
+    .nav-link
+      .badge.badge-pill.badge-primary
+        = @current_date

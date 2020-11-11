@@ -1,3 +1,22 @@
-.about-us-card-header {
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.headline-jumbotron {
+  font-family: 'Fjalla One', sans-serif;  
+}
+
+.bg-orange {
   background-color: #e67e22;
+}
+
+.contact-info {
+  font-family: 'Bree Serif', serif;
+}
+
+.footer {
+  font-family: 'Rajdhani', sans-serif;
 }
