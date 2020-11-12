@@ -31,6 +31,6 @@ class HomeController < ApplicationController
   private
 
   def current_date
-    @current_date = Time.now.strftime("%m %b %Y")
+    @current_date = Time.now.strftime("%d %b %Y")
   end
 end
