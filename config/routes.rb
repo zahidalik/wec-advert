@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get 'journalism', to: 'home#journalism'
   get 'nursing', to: 'home#nursing'
   get 'a-level', to: 'home#a_level'
+  get 'tcdos', to: 'home#tcdos'
 end

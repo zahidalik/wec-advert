@@ -5,7 +5,24 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.headline-jumbotron {
+.jumbotron {
+  background-image: linear-gradient(to right bottom, rgba(72, 84, 96, 0.6), rgba(30, 39, 46, 0.6)), url("~index_page.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+  position: relative;
+}
+
+.wec-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main-headline-font {
   font-family: 'Fjalla One', sans-serif;
 }
 

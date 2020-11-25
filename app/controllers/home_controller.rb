@@ -19,6 +19,9 @@ class HomeController < ApplicationController
   def a_level
   end
 
+  def tcdos
+  end
+
   def cttc
   end
 

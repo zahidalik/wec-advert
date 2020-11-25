@@ -1,16 +1,12 @@
-%p
-.row
-  .col-lg-8
-    .card-header.bg-green-caribbean.text-light
-      .fa.fa-graduation-cap
-      CTTC (Coast Teachers Training College)
-    .card-body
-      Offers Diploma in Primary, Diploma in Secondary and ECE courses
-    .card-footer
-      = link_to "Back to all schools", root_path, class: "btn btn-primary"
-    %p
-  .col-lg-4
-    .row
+.container
+  .card-header.h3.bg-green-caribbean.text-light
+    .fa.fa-graduation-cap
+    CTTC (Coast Teachers Training College)
+  .card-body
+    Offers Diploma in Primary, Diploma in Secondary and ECE courses
+  %p
+  .row
+    .col-lg-6
       #carouselExampleIndicators1.carousel.slide{"data-ride" => "carousel"}
         %ol.carousel-indicators
           %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleIndicators1"}
@@ -29,8 +25,7 @@
         %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleIndicators1", :role => "button"}
           %span.carousel-control-next-icon{"aria-hidden" => "true"}
           %span.sr-only Next
-    %p
-    .row
+    .col-lg-6
       .card.w-100
         .card-header.bg-cyanite.text-light
           .fa.fa-question-circle

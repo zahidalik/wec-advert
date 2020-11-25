@@ -1,107 +1,26 @@
-%p
-.jumbotron.border
-  %h1.text-center
-    .headline-jumbotron
-      Waliul Asr Education Centre
-    WIPAHS
-    
-.row
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("school.jpg", alt: "school", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title CTTC (Teachers Training)
-            %p.card-text Offers Diploma in Primary, Diploma in Secondary and ECE courses
-            %p.card-text
-              %small
-                = link_to "Go to CTTC", cttc_path, class: 'btn btn-sm btn-primary'
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("school.jpg", alt: "school", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title A3 (Journalism)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to Journalism", journalism_path, class: 'btn btn-sm btn-primary'
-.row
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("nursing1.jpg", alt: "nursing", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title A3 (Nursing)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to Nursing", nursing_path, class: 'btn btn-sm btn-primary'
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("school.jpg", alt: "school", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title WGS (Girls Secondary)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to WGS", wgs_path, class: 'btn btn-sm btn-primary'
-.row
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("wbs1.jpg", alt: "wbs", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title WBS (Boys Secondary)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to WBS" , wbs_path, class: 'btn btn-sm btn-primary'
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("school.jpg", alt: "school", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title A Level (Boys and Girls)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to A level", a_level_path, class: 'btn btn-sm btn-primary'
-.row
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("kemps2.jpg", alt: "kemos", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title KEMPS (Primary School)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to KEMPS", kemps_path, class: 'btn btn-sm btn-primary'
-  .col-lg-6
-    .card.mb-3{:style => "max-width: 540px;"}
-      .row.no-gutters
-        .col-md-4
-          = image_tag("uans1.jpg", alt: "uans", width: "163px", height: "200px")
-        .col-md-8
-          .card-body
-            %h5.card-title UANS (Nursery School)
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-            %p.card-text
-              %small
-                = link_to "Go to UANS", uans_path, class: 'btn btn-sm btn-primary'
+.jumbotron.jumbotron-fluid
+  .container
+    %h1.display-4.text-center
+      .main-headline-font
+        Waliul Asr Education Centre
+      .h2 WIPAHS
+
+      .wec-button
+        = link_to cttc_path, class: "btn btn-lg btn-outline-light" do
+          CTTC
+        = link_to journalism_path, class: "btn btn-lg btn-outline-light" do
+          A3 Journalism
+        = link_to nursing_path, class: "btn btn-lg btn-outline-light" do
+          A3 Nursing
+        = link_to wgs_path, class: "btn btn-lg btn-outline-light" do
+          WGS
+        = link_to wbs_path, class: "btn btn-lg btn-outline-light" do
+          WBS
+        = link_to a_level_path, class: "btn btn-lg btn-outline-light" do
+          A Level
+        = link_to tcdos_path, class: "btn btn-lg btn-outline-light" do
+          TCDOS
+        = link_to kemps_path, class: "btn btn-lg btn-outline-light" do
+          KEMPS
+        = link_to uans_path, class: "btn btn-lg btn-outline-light" do
+          UANS

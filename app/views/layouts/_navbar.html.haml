@@ -1,24 +1,49 @@
-.navbar.navbar-expand-lg.justify-content-end.bg-info.sticky-top
-  .nav-item.mr-auto
-    .nav-link.active
-      = link_to root_path, class: "text-light" do
-        .fa.fa-home
-        Waliul Asr Education Centre
-  .nav-item
-    .nav-link.active.text-light
-      .fa.fa-phone
-      05575859
-  .nav-item
-    .nav-link.active
-      = link_to "http://www.wipahs.co.tz", class: "text-light" do
-        .fa.fa-globe-africa
-        WIPAHS
-  .nav-item
-    .nav-link
-      = link_to about_path, class: "text-light" do
-        .fa.fa-info-circle
-        About us
-  .nav-item
-    .nav-link
-      .badge.badge-pill.badge-primary
-        = @current_date
+%nav.navbar.navbar-expand-lg.navbar-dark.bg-info.sticky-top
+  = link_to root_path, class: "navbar-brand"do
+    = image_tag("school.jpg", alt: "school", height: "30", loading: "lazy", width: "30", class: "d-inline-block align-top")
+    W.E.C.
+  %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarNav.collapse.navbar-collapse
+    %ul.navbar-nav
+      %li.nav-item.active
+        = link_to root_path, class: "nav-link" do
+          .fa.fa-home
+          Home
+      - unless controller.action_name == "index"
+        %li.nav-item.dropdown
+          %a#navbarDropdown.nav-link.active.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            All our schools
+          .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+            = link_to "CTTC", cttc_path, class: "dropdown-item"
+            = link_to "A3 Journalism", journalism_path, class: "dropdown-item"
+            = link_to "A3 Nursing", nursing_path, class: "dropdown-item"
+            = link_to "WGS", wgs_path, class: "dropdown-item"
+            = link_to "WBS", wbs_path, class: "dropdown-item"
+            = link_to "A Level", a_level_path, class: "dropdown-item"
+            = link_to "TCDOS", tcdos_path, class: "dropdown-item"
+            = link_to "KEMPS", kemps_path, class: "dropdown-item"
+            = link_to "UANS", uans_path, class: "dropdown-item"
+            /.dropdown-divider
+          %span.sr-only (current)
+      %li.nav-item.active
+        = link_to '#', class: "nav-link" do
+          .fa.fa-users
+          Important contacts
+      %li.nav-item.active
+        = link_to '#', class: "nav-link" do
+          .fa.fa-user-graduate
+          Student life
+    %ul.navbar-nav.ml-auto
+      %li.nav-item.active
+        = link_to "http://www.wipahs.co.tz", class: "nav-link" do
+          .fa.fa-globe-africa
+          WIPAHS
+      %li.nav-item.active
+        = link_to about_path, class: "nav-link" do
+          .fa.fa-info-circle
+          About us
+      %li.nav-item
+        .nav-link
+          .badge.badge-pill.badge-primary
+            = @current_date

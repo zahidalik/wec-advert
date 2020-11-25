@@ -1,67 +1,68 @@
 %p
-.row
-  .col-lg-8
-    .card-header.bg-green-caribbean.text-light
-      .fa.fa-graduation-cap
-      UANS (Ummi Abiha Nursery School)
-    .card-body
-      KG1, KG2 and KG3
-    .card-footer
-      = link_to "Back to all schools", root_path, class: "btn btn-primary"
-    %p
-  .col-lg-4
-    .row
-      #carouselExampleIndicators1.carousel.slide{"data-ride" => "carousel"}
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleIndicators1"}
-          %li{"data-slide-to" => "1", "data-target" => "#carouselExampleIndicators1"}
-          %li{"data-slide-to" => "2", "data-target" => "#carouselExampleIndicators1"}
-          %li{"data-slide-to" => "3", "data-target" => "#carouselExampleIndicators1"}
-        .carousel-inner
-          .carousel-item.active
-            = image_tag("uans1.jpg", alt: "uans1", class: "d-block w-100")
-          .carousel-item
-            = image_tag("uans2.jpg", alt: "uans2", class: "d-block w-100")
-          .carousel-item
-            = image_tag("uans3.jpg", alt: "uans3", class: "d-block w-100")
-          .carousel-item
-            = image_tag("uans4.jpg", alt: "uans4", class: "d-block w-100")
-        %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleIndicators1", :role => "button"}
-          %span.carousel-control-prev-icon{"aria-hidden" => "true"}
-          %span.sr-only Previous
-        %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleIndicators1", :role => "button"}
-          %span.carousel-control-next-icon{"aria-hidden" => "true"}
-          %span.sr-only Next
-    %p
-    .row
-      .card.w-100
-        .card-header.bg-cyanite.text-light
-          .fa.fa-question-circle
-          Contact(s) for admission
-        .card-body
-          .contact-info
-            Accounts:
-            .fa.fa-phone
-            048885858
-          %p
-          .contact-info
-            Principle:
-            .fa.fa-phone
-            0666474747
-        .card-footer
-          .text-left
-            .badge.badge-warning
-              Monday to Friday
-            .badge.badge-primary
-              8:00 AM
-            \-
-            .badge.badge-primary
-              5:00 PM
-          .text-right
-            .badge.badge-warning
-              Saturday
-            .badge.badge-primary
-              8:00 AM
-            \-
-            .badge.badge-primary
-              12:30 PM
+.container
+  .row
+    .col-lg-8
+      .card-header.bg-green-caribbean.text-light
+        .fa.fa-graduation-cap
+        UANS (Ummi Abiha Nursery School)
+      .card-body
+        KG1, KG2 and KG3
+      .card-footer
+        = link_to "Back to all schools", root_path, class: "btn btn-primary"
+      %p
+    .col-lg-4
+      .row
+        #carouselExampleIndicators1.carousel.slide{"data-ride" => "carousel"}
+          %ol.carousel-indicators
+            %li.active{"data-slide-to" => "0", "data-target" => "#carouselExampleIndicators1"}
+            %li{"data-slide-to" => "1", "data-target" => "#carouselExampleIndicators1"}
+            %li{"data-slide-to" => "2", "data-target" => "#carouselExampleIndicators1"}
+            %li{"data-slide-to" => "3", "data-target" => "#carouselExampleIndicators1"}
+          .carousel-inner
+            .carousel-item.active
+              = image_tag("uans1.jpg", alt: "uans1", class: "d-block w-100")
+            .carousel-item
+              = image_tag("uans2.jpg", alt: "uans2", class: "d-block w-100")
+            .carousel-item
+              = image_tag("uans3.jpg", alt: "uans3", class: "d-block w-100")
+            .carousel-item
+              = image_tag("uans4.jpg", alt: "uans4", class: "d-block w-100")
+          %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleIndicators1", :role => "button"}
+            %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+            %span.sr-only Previous
+          %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleIndicators1", :role => "button"}
+            %span.carousel-control-next-icon{"aria-hidden" => "true"}
+            %span.sr-only Next
+      %p
+      .row
+        .card.w-100
+          .card-header.bg-cyanite.text-light
+            .fa.fa-question-circle
+            Contact(s) for admission
+          .card-body
+            .contact-info
+              Accounts:
+              .fa.fa-phone
+              048885858
+            %p
+            .contact-info
+              Principle:
+              .fa.fa-phone
+              0666474747
+          .card-footer
+            .text-left
+              .badge.badge-warning
+                Monday to Friday
+              .badge.badge-primary
+                8:00 AM
+              \-
+              .badge.badge-primary
+                5:00 PM
+            .text-right
+              .badge.badge-warning
+                Saturday
+              .badge.badge-primary
+                8:00 AM
+              \-
+              .badge.badge-primary
+                12:30 PM
